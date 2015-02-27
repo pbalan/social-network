@@ -3,8 +3,6 @@
 var dotenv = require('dotenv');
 dotenv.load();
 
-var Facebook = require('./lib/facebook');
-
 // load http module to create server
 var restify = require('restify');
 // specify the server port and other options
@@ -15,9 +13,12 @@ var options =  {
 
 function app(req, res) {
 
-	res.write('module: ' + reportObj.module + ', action: ' + reportObj.action);
+	res.write();
 	res.end();
 };
+
+// create an application instance
+var SocialNetwork = require('./lib/social-network');
 
 var server = restify.createServer(app);
 
@@ -31,3 +32,4 @@ server.listen(options.port, function(request, response){
 	// server created
 	console.log('server running at http://' + options.host + '/ on port ' + server.address().port);
 });
+
