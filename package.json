@@ -1,0 +1,40 @@
+{
+  "name": "social-network",
+  "description": "social-network library",
+  "tags": [
+    "social",
+    "network",
+    "qq",
+    "facebook",
+    "wechat",
+    "api"
+  ],
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "author": {
+    "name": "Prashant Balan",
+    "email": "prashant.balan@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/pbalan/social-network.git"
+  },
+  "bugs": {
+    "url": "http://github.com/pbalan/social-network/issues"
+  },
+  "main": "index.js",
+  "readme": "# Node social-network APIs",
+  "readmeFilename": "README.md",
+  "homepage": "http://github.com/pbalan/social-network",
+  "dependencies": {
+    "dotenv": "0.2.0",
+    "facebook-node-sdk": "0.2.0",
+    "wechat" : "1.2.1",
+    "qqsdk"  : "0.1.5",
+    "request": "2.22.0",
+    "restify": "2.8.5"
+  }
+}
